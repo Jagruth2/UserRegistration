@@ -111,10 +111,14 @@ CustomerDao.class to map DynamoDB database
 Created local user-create-0.0.1-SNAPSHOT.jar java file which can be used as microservice.
 
 Next downloaded the Docker Desktop application and installed it.
+
 With the help of windows powershell opened from this project location I have created the docker image and pushed it Docker Hub as a repository.
 
 Then in AWS ECS in virgina region I used this docker container.
+
 In the ECS cluster I have obtained the Public IP 3.92.51.165 which can be used as a microservice with the port 8081
-For example
+
+For example:
+
 http://3.92.51.165:8081/customer which can be used in postman POST to create the user profile
 
