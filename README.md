@@ -83,7 +83,7 @@ POST : use POST http://localhost:8081/customer and add Content-Type as applicati
       
       
       
-I have created the Docker container of this jar file and uploaded it to ECS of AWS.
+I have created the Docker container of this springboot Java application and uploaded it to ECS of AWS.
 This created a public ip 3.92.51.165
 Instead of using local host in POST and GET of postman
 Use http://3.92.51.165:8081/customer for POST
@@ -91,3 +91,9 @@ and
 USE http://3.92.51.165:8081/customers/{customerId}
 for GET in PostMan.
 This is accessable from anylocation with the help of PostMan.
+
+
+                     ARCHITECHURE:
+
+
+
