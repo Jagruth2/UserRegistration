@@ -39,7 +39,8 @@ GET:  use GET http://localhost:8081/customers/{customerId} and add Content-Type 
 example : GET http://localhost:8081/customers/33
 This will fetch the details of the customer with id 33 from the DynamoDB database
 
-{
+
+     {
     "customerId": "33",
     "title":"Mr",
     "lastName":"jag",
@@ -49,8 +50,7 @@ This will fetch the details of the customer with id 33 from the DynamoDB databas
     "subUrb" : "LEICHHARDT" ,
      "state" : "NSW" ,
     "fullAddress" : "100 william street, leichhdart, nsw 2040"
-   
-      }
+     }
 
 
 Updating the details of the user:
@@ -59,7 +59,7 @@ User Need to know the customerID to update their details.
 The customerId we used is a primary key of DyanmoDB database. So, it is unique. With the help of customerId the user can update the details.
 POST : use POST http://localhost:8081/customer and add Content-Type as application/json in headers of postman service.
 
-this will update the user and send the details to DynamoDB database
+
       
    
       Then add details in Body section of postman as follows:
@@ -76,6 +76,8 @@ this will update the user and send the details to DynamoDB database
     "fullAddress" : "100 william street, leichhdart, nsw 2040"
    
       }
+      
+      this will update the user and send the details to DynamoDB database
       
       Note: customerId and mobile number should be numerical values or else it will give the error.
       
