@@ -85,7 +85,7 @@ POST : use POST http://localhost:8081/customer and add Content-Type as applicati
       
 I have created the Docker container of this springboot Java application and uploaded it to ECS of AWS.
 This created a public ip 3.92.51.165
-Instead of using local host in POST and GET of postman
+Instead of using local host in POST and GET of PostMan
 Use http://3.92.51.165:8081/customer for POST
 and 
 USE http://3.92.51.165:8081/customers/{customerId}
@@ -95,5 +95,20 @@ This is accessable from anylocation with the help of PostMan.
 
                      ARCHITECHURE:
 
+Used SpringBoot and Maven with help of eclipse IDE to create this Application.
+I have used mainly 4 java classes 
+Customer.class to create and get the details of the customer.
+CustomerController.class to create POST and GET methods.
+DynamoDBConfig.class to validate AWS and DynamoDB configutations
+CustomerDao.class to map DynamoDB database
 
+created local user-create-0.0.1-SNAPSHOT.jar java file which can be used as microservice.
+
+Next downloaded the Docker Desktop application and installed it.
+With the help of windows powershell opened from this project location I have created the docker image and pushed it Docker Hub as a repository.
+
+Then in AWS ECS in virgina region I used this docker container.
+In the ECS cluster I have obtained the Public IP 3.92.51.165 which can be used as a microservice with the port 8081
+For example
+http://3.92.51.165:8081/customer which can be used in postman POST to create the user profile
 
